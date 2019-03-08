@@ -1,10 +1,3 @@
-/*****************************************************************************
-*
-* Craig D. Colquhoun, Glasgow 2015
-*
-******************************************************************************/
-
-
 #include <SPI.h>                  // needed for Arduino versions later than 0018
 #include <Ethernet.h>
 #include <EthernetUdp.h>         // UDP library from: bjoern@cs.stanford.edu 12/30/2008
@@ -55,13 +48,6 @@ EthernetUDP Udp;
 / general stuff
 ******************************************************************************/
 const long delayTime = 40000L;  // in milliseconds
-
-
-/* send with netcat in linux: echo -n "@YUN#3335.4e19#234.11" | netcat -c -w1 -u 192.168.100.1 8010 */
-//String s1   = "echo -n \"@";
-//String s2   = "\" | netcat -c -w1 -u 172.16.0.1 8010 ";
-
-
 
 void setup() {
   
